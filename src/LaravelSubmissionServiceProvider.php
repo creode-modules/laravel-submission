@@ -1,6 +1,7 @@
 <?php
 
 namespace Creode\LaravelSubmission;
+
 use Illuminate\Support\ServiceProvider;
 
 class LaravelSubmissionServiceProvider extends ServiceProvider
@@ -22,6 +23,6 @@ class LaravelSubmissionServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->register(\Creode\LaravelSubmission\Providers\EventServiceProvider::class);
     }
 }
