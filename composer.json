@@ -1,0 +1,28 @@
+{
+    "name": "creode/laravel-submission",
+    "description": "This package registers event listeners to handle form submissions.",
+    "keywords": [
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Creode\\LaravelSubmission\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Creode\\LaravelSubmission\\LaravelSubmissionServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
